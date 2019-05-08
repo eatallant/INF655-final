@@ -1,0 +1,114 @@
+body {
+    background-color: white;
+   	font-family: Helvetica, sans-serif;
+}
+nav {
+	list-style:none;
+	border-bottom:1px solid lightgray;
+	display:flex;
+	
+}
+nav ul {
+	display:flex;
+	
+}
+
+.menu-item a {
+	font-weight: 400;
+	color:#333;
+}
+nav a:hover {
+	text-decoration:none;
+	color:red;
+}
+.topnav {
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+}
+#logo {
+    height:40px;
+    width:auto;
+    margin-bottom: 10px;
+}
+
+.nav-link:hover {
+    cursor:pointer;
+    color:red;
+}
+.secondaryNav {
+    background-color:lightgrey!important;
+    margin: auto;
+    width:100%;
+    text-align: center;
+    height:80px;
+
+}
+.gettingStarted, .educationalCourses, .pricing, .sparkInTheField {
+    display:none;
+}
+.displayNav {
+    display:flex !important;
+}
+.active {
+    color:red;
+}
+.secondaryNav .nav-link {
+    margin-right:12px;
+    margin-left:12px;
+    color:#555555;
+}
+.secondaryNav .nav-link:hover {
+
+    color:red;
+}
+
+.nav-mobile {
+	display:none;
+}
+
+.hidden {
+	display:none;
+}
+/*
+ * 
+ * DELAY ANIMATIONS
+ *
+ */
+
+@keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@-webkit-keyframes fadein {
+	from {opacity: 0;}
+	to {opacity: 1;}
+}
+@keyframes fadeinout {
+	0%,100%{opacity: 0;}
+	50%{opacity: 1;}
+}
+@-webkit-keyframes fadeinout {
+	0%,100%{opacity: 0;}
+	50%{opacity: 1;}
+}
+@keyframes fadeinouthold {
+	0%,100%{opacity: 0;}
+	35%,65%{opacity: 1;}
+}
+.fade-in-out-hold {
+	opacity: 0;
+	animation: fadeinouthold 3s linear forwards;
+}
+.fade-in {
+	opacity:0;
+	animation: fadein 2s linear forwards;
+	/* animation: name duration timing-function delay iteration-count direction fill-mode; */
+
+}
+
+.fade-in-out {
+	opacity: 0;
+	-webkit-animation: fadeinout 4s linear forwards;
+	animation: fadeinout 4s linear forwards;
+}
+
